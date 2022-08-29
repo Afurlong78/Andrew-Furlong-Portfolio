@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useThemeContext } from "../Providers/ThemeProvider";
+import { useThemeContext } from "../../Providers/ThemeProvider";
 import {
   NavContainer,
   NavLogo,
@@ -15,7 +15,7 @@ import {
   ResumeDownload,
 } from "./Styles";
 
-function NAV() {
+function Nav() {
   const { theme, themeHandler } = useThemeContext();
 
   const [mobile, setMobile] = useState(false);
@@ -42,7 +42,9 @@ function NAV() {
         <NavLink href="#about">About</NavLink>
         <NavLink href="#projects">Projects</NavLink>
         <NavLink href="#contact">Contact</NavLink>
-        <ResumeDownload>Resume</ResumeDownload>
+        <ResumeDownload href="resume.pdf" download>
+          Download Resume
+        </ResumeDownload>
       </NavLinkContainer>
 
       <MobileNavIcon onClick={mobileHandler}>
@@ -55,10 +57,13 @@ function NAV() {
           <MobileNavBtn href="#about">About</MobileNavBtn>
           <MobileNavBtn href="#projects">Projects</MobileNavBtn>
           <MobileNavBtn href="#contact">Contact</MobileNavBtn>
+          <MobileNavBtn href="resume.pdf" download>
+            Resume
+          </MobileNavBtn>
         </MobileNavContainer>
       </MobileNav>
     </NavContainer>
   );
 }
 
-export default NAV;
+export default Nav;

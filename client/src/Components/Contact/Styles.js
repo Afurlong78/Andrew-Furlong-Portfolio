@@ -1,5 +1,4 @@
-import styled from "styled-components";
-const edgeSize = `1em`;
+import styled, { keyframes } from "styled-components";
 
 export const MainContact = styled.div`
   height: 100%;
@@ -35,7 +34,7 @@ export const MainContact = styled.div`
 `;
 
 export const FormContainer = styled.form`
-  height: 100%;
+  height: auto;
   width: 60%;
 
   display: flex;
@@ -75,6 +74,7 @@ export const FormContainer = styled.form`
 export const GoodbyeTextContainer = styled.div`
   width: 40%;
   height: 100%;
+  min-height: 200px;
 
   display: flex;
   flex-direction: column;
@@ -87,6 +87,10 @@ export const GoodbyeTextContainer = styled.div`
     flex-direction: row;
     width: 100%;
   }
+
+  @media all and (max-width: 500px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const GoodbyeText = styled.div`
@@ -97,6 +101,8 @@ export const GoodbyeText = styled.div`
   line-height: 1.5rem;
 
   text-indent: 15px;
+
+  transition: all 300ms ease-in-out;
 
   color: ${(props) => {
     if (props.status) {
@@ -234,8 +240,11 @@ export const FormBtnRow = styled.div`
   height: auto;
 
   display: flex;
+
   justify-content: center;
   align-items: center;
+
+  gap: 1rem;
 `;
 
 export const FormBtn = styled.button`
@@ -254,7 +263,7 @@ export const FormBtn = styled.button`
 
   background: ${(props) => {
     if (props.status === 1) {
-      return `#575656`;
+      return `#292929`;
     } else {
       return `#292929`;
     }
@@ -271,6 +280,7 @@ export const FormBtn = styled.button`
   &:hover {
     transform: scale(1.1);
     box-shadow: -2px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    background: #575656;
   }
 `;
 
@@ -285,7 +295,7 @@ export const Input = styled.input`
     if (props.status) {
       return `2px solid white`;
     } else {
-      return `2px solid #292929`;
+      return `2px solid #6D97FF`;
     }
   }};
 
@@ -355,7 +365,7 @@ export const TextContainer = styled.textarea`
     if (props.status) {
       return `2px solid white`;
     } else {
-      return `2px solid #292929`;
+      return `2px solid #6D97FF`;
     }
   }};
 
@@ -371,7 +381,13 @@ export const TextContainer = styled.textarea`
 export const IconContainer = styled.div`
   height: 200px;
   width: 200px;
-  color: #292929;
+  color: ${(props) => {
+    if (props.status) {
+      return `#292929`;
+    } else {
+      return `#6D97FF`;
+    }
+  }};
 
   margin-top: 15px;
 
@@ -382,4 +398,92 @@ export const IconContainer = styled.div`
   @media all and (max-width: 1024px) {
     display: none;
   }
+`;
+
+//-------------------------------------------------------------------//
+//-------------------------------------------------------------------//
+//-------------------------------------------------------------------//
+//-------------------------------------------------------------------//
+
+export const SpinnerContainer = styled.div`
+  height: 200px;
+  width: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  position: relative;
+`;
+
+const redSpinnerAnimation = keyframes`
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+`;
+
+export const RedSpinner = styled.div`
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 15px solid transparent;
+
+  border-left-color: #ff8196;
+
+  animation: ${redSpinnerAnimation} 3s ease-in-out infinite;
+
+  z-index: 11;
+`;
+
+const blueSpinnerAnimation = keyframes`
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+`;
+
+export const BlueSpinner = styled.div`
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 15px solid transparent;
+
+  border-top-color: #8fa9ff;
+
+  animation: ${blueSpinnerAnimation} 2s ease-out infinite;
+`;
+
+const greenSpinnerAnimation = keyframes`
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+`;
+
+export const GreenSpinner = styled.div`
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 15px solid transparent;
+
+  border-right-color: #a8ffd1;
+
+  animation: ${greenSpinnerAnimation} 1.5s ease-in infinite;
 `;

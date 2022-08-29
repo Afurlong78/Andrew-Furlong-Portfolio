@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Styled from "../Global/Styles";
-import { useThemeContext } from "../Providers/ThemeProvider";
+import { useThemeContext } from "../../Providers/ThemeProvider";
 import { useInView } from "react-intersection-observer";
 import {
   HeaderText,
@@ -42,6 +42,14 @@ function About() {
     threshold: 0.75,
     triggerOnce: true,
   });
+  const { ref: textRef1, inView: textVisible1 } = useInView({
+    threshold: 0.75,
+    triggerOnce: true,
+  });
+  const { ref: textRef2, inView: textVisible2 } = useInView({
+    threshold: 0.75,
+    triggerOnce: true,
+  });
   const { ref: skillsRef, inView: skillsVisible } = useInView({
     threshold: 0.75,
     triggerOnce: true,
@@ -52,7 +60,10 @@ function About() {
       <Styled.Container id="about">
         <Styled.VisibleWrapper visible={headerVisible}>
           <HeaderText status={theme} ref={headerRef} id="header">
-            <strong>About Me</strong>
+            <strong style={theme ? { color: "white" } : { color: "#6D97FF" }}>
+              About
+            </strong>{" "}
+            Me
           </HeaderText>
         </Styled.VisibleWrapper>
         <AboutTextContainer>
@@ -69,7 +80,9 @@ function About() {
                 to solve problems and create amazing applications and user
                 experiences!
               </Styled.Text>
+            </Styled.VisibleWrapper>
 
+            <Styled.VisibleWrapper ref={textRef1} visible={textVisible1}>
               <Styled.Text status={theme}>
                 Following graduation from Ithaca College I initially began work
                 in the field of finance. While that experience gave me useful
@@ -85,7 +98,7 @@ function About() {
               </Styled.Text>
             </Styled.VisibleWrapper>
 
-            <Styled.VisibleWrapper visible={textVisible}>
+            <Styled.VisibleWrapper visible={textVisible2} ref={textRef2}>
               <Styled.Text status={theme}>
                 When I am not developing websites and applications you can find
                 me watching a sports game or on a walk with my dog, Woodie.
@@ -94,7 +107,7 @@ function About() {
 
             <SkillsWrapper ref={skillsRef} visible={skillsVisible}>
               <SkillsHeader status={theme}>
-                <u>Skills</u>
+                <strong>Skills</strong>
               </SkillsHeader>
 
               <SkillsContainer status={theme}>

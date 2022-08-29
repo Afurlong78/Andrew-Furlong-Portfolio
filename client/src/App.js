@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from "react";
 import styled from "styled-components";
-import { useThemeContext } from "./Components/Providers/ThemeProvider";
+import { useThemeContext } from "./Providers/ThemeProvider";
 import Nav from "./Components/Nav/Nav";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
@@ -20,23 +20,6 @@ const MainContainer = styled.div`
       return `#575656`;
     } else {
       return `white`;
-    }
-  }};
-`;
-
-const LinearBackground = styled.div`
-  height: 100%;
-  width: 85%;
-
-  margin: auto;
-
-  transition: all 300ms ease-in;
-
-  background-image: ${(props) => {
-    if (props.status) {
-      return `linear-gradient(to bottom, #575656, #474747)`;
-    } else {
-      return `linear-gradient(to bottom, white, #b8b8b8)`;
     }
   }};
 `;

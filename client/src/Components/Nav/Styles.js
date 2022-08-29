@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-const edgeSize = `0.25em`;
-const borderWidth = `0.25em`;
-
 export const NavContainer = styled.div`
   width: 100%;
   height: 90px;
@@ -78,7 +75,7 @@ export const NavLinkContainer = styled.div`
   font-weight: 500;
   letter-spacing: 0.8px;
 
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 950px) {
     display: none;
   }
 `;
@@ -217,7 +214,7 @@ export const MobileNavIcon = styled.button`
 
   z-index: 100;
 
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 950px) {
     display: block;
 
     display: flex;
@@ -257,7 +254,7 @@ export const MobileNav = styled.div`
 
   padding: 15px;
 
-  box-shadow: -2px 10px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -4px 10px 10px 0px rgba(0, 0, 0, 0.2);
 
   transition: transform 500ms ease-in-out;
   transform: ${(props) => {
@@ -268,7 +265,7 @@ export const MobileNav = styled.div`
     }
   }};
 
-  @media (min-width: 800px) {
+  @media (min-width: 950px) {
     display: none;
   }
 `;
@@ -317,8 +314,8 @@ export const MobileNavBtn = styled.a`
   }
 `;
 
-export const ResumeDownload = styled.button`
-  height: 3rem;
+export const ResumeDownload = styled.a`
+  height: 2rem;
   width: auto;
 
   cursor: pointer;

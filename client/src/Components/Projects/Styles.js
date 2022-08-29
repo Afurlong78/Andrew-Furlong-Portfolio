@@ -1,8 +1,8 @@
 import styled, { keyframes } from "styled-components";
-import betterBudget from "../Assets/BetterBudget.jpg";
-import nearFall from "../Assets/NearFall.jpg";
-import weather from "../Assets/weather.jpg";
-import guStakes from "../Assets/GUStakes1.PNG";
+import betterBudget from "../../Assets/BetterBudget.jpg";
+import nearFall from "../../Assets/NearFall.jpg";
+import weather from "../../Assets/weather.jpg";
+import guStakes from "../../Assets/GUStakes1.PNG";
 
 export const VisibleWrapper = styled.div`
   height: 100%;
@@ -378,6 +378,7 @@ export const DarkBBBtn = styled.button`
   &:hover {
     transform: scale(1.1);
     box-shadow: -2px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    background: #575656;
   }
 
   @media all and (max-width: 500px) {
@@ -419,6 +420,7 @@ export const DarkNFBtn = styled.button`
   &:hover {
     transform: scale(1.1);
     box-shadow: -2px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    background: #575656;
   }
 
   @media all and (max-width: 500px) {
@@ -460,6 +462,7 @@ export const DarkWWBtn = styled.button`
   &:hover {
     transform: scale(1.1);
     box-shadow: -2px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    background: #575656;
   }
 
   @media all and (max-width: 500px) {
@@ -501,6 +504,7 @@ export const DarkGUBtn = styled.button`
   &:hover {
     transform: scale(1.1);
     box-shadow: -2px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    background: #575656;
   }
 
   @media all and (max-width: 500px) {
@@ -555,7 +559,7 @@ export const BBMedia = styled.div`
     url(${betterBudget});
   background-size: cover;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -591,9 +595,17 @@ export const BBContent = styled.div`
   font-weight: 700;
   letter-spacing: 0.8px;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1024px) {
     width: 100%;
     border-radius: 8px;
+    background-image: linear-gradient(
+        hsla(0, 0%, 0%, 0.75),
+        rgba(0, 0, 0, 0.75)
+      ),
+      url(${betterBudget});
+    background-size: cover;
+    color: white;
+    border: none;
   }
 `;
 
@@ -639,7 +651,7 @@ export const NFMedia = styled.div`
     url(${nearFall});
   background-size: cover;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -674,9 +686,17 @@ export const NFContent = styled.div`
   font-weight: 700;
   letter-spacing: 0.8px;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1024px) {
     width: 100%;
     border-radius: 8px;
+    background-image: linear-gradient(
+        hsla(0, 0%, 0%, 0.75),
+        rgba(0, 0, 0, 0.75)
+      ),
+      url(${nearFall});
+    background-size: cover;
+    color: white;
+    border: none;
   }
 `;
 
@@ -722,7 +742,7 @@ export const WWMedia = styled.div`
     url(${weather});
   background-size: cover;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -758,9 +778,17 @@ export const WWContent = styled.div`
   font-weight: 700;
   letter-spacing: 0.8px;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1024px) {
     width: 100%;
     border-radius: 8px;
+    background-image: linear-gradient(
+        hsla(0, 0%, 0%, 0.75),
+        rgba(0, 0, 0, 0.75)
+      ),
+      url(${weather});
+    background-size: cover;
+    color: white;
+    border: none;
   }
 `;
 
@@ -806,7 +834,7 @@ export const GUMedia = styled.div`
     url(${guStakes});
   background-size: cover;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -841,9 +869,17 @@ export const GUContent = styled.div`
   font-weight: 700;
   letter-spacing: 0.8px;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1024px) {
     width: 100%;
     border-radius: 8px;
+    background-image: linear-gradient(
+        hsla(0, 0%, 0%, 0.75),
+        rgba(0, 0, 0, 0.75)
+      ),
+      url(${guStakes});
+    background-size: cover;
+    color: white;
+    border: none;
   }
 `;
 
@@ -861,6 +897,10 @@ export const CardHeader = styled.h3`
 
   color: #292929;
 
+  @media all and (max-width: 1024px) {
+    color: white;
+  }
+
   @media all and (max-width: 900px) {
     font-size: 1.5rem;
   }
@@ -874,8 +914,16 @@ export const CardText = styled.p`
 
   color: #292929;
 
+  @media all and (max-width: 1024px) {
+    color: white;
+  }
+
   @media all and (max-width: 900px) {
     font-size: 0.9rem;
+  }
+
+  @media all and (max-width: 500px) {
+    font-size: 0.8rem;
   }
 `;
 
@@ -886,7 +934,7 @@ export const SkillsRow = styled.div`
   transition: all 100ms ease-in-out;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   justify-content: center;
   align-items: center;
 
@@ -898,7 +946,7 @@ export const SkillsRow = styled.div`
 
   @media all and (max-width: 900px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     justify-content: center;
     align-items: center;
   }
@@ -919,7 +967,19 @@ export const Skill = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  background: #292929;
+  transition: all 300ms ease-in-out;
+
+  background: ${(props) => {
+    if (props.status) {
+      return `white`;
+    } else {
+      return `#6d97ff`;
+    }
+  }};
+
+  @media all and (max-width: 1024px) {
+    background: white;
+  }
 
   @media all and (max-width: 900px) {
     width: 180px;
@@ -937,7 +997,17 @@ export const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  color: white;
+  color: ${(props) => {
+    if (props.status) {
+      return `#292929`;
+    } else {
+      return `white`;
+    }
+  }};
+
+  @media all and (max-width: 1024px) {
+    color: #292929;
+  }
 `;
 
 export const SkillTextContainer = styled.div`
@@ -949,7 +1019,17 @@ export const SkillTextContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  color: white;
+  color: ${(props) => {
+    if (props.status) {
+      return `#292929`;
+    } else {
+      return `white`;
+    }
+  }};
+
+  @media all and (max-width: 1024px) {
+    color: #292929;
+  }
 `;
 
 //-------------------------------------------------------------------//
@@ -1041,6 +1121,11 @@ export const CardBtn = styled.button`
         return `2px solid #292929`;
       }
     }};
+  }
+
+  @media all and (max-width: 1024px) {
+    color: white;
+    border: 2px solid white;
   }
 
   @media all and (max-width: 900px) {

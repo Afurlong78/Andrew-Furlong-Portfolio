@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HeaderText = styled.h2`
+export const HeaderText = styled.h2`
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
@@ -20,7 +20,7 @@ const HeaderText = styled.h2`
   }};
 `;
 
-const Text = styled.p`
+export const Text = styled.p`
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -45,7 +45,7 @@ const Text = styled.p`
   }
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   height: 100%;
   width: 85%;
 
@@ -59,7 +59,7 @@ const Container = styled.div`
   position: relative;
 `;
 
-const Row = styled.div`
+export const Row = styled.div`
   width: 90%;
   height: auto;
 
@@ -67,11 +67,21 @@ const Row = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 15px;
-
   @media all and (max-width: 1024px) {
     width: 100%;
   }
+`;
+
+export const Column = styled.div`
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
 `;
 
 export const VisibleWrapper = styled.div`
@@ -107,11 +117,33 @@ export const SectionWrapper = styled.div`
     if (props.status) {
       return `#727272`;
     } else {
-      return `#f9f9f9`;
+      return `#F9FBFF`;
     }
   }};
   padding-top: 75px;
   padding-bottom: 75px;
+`;
+
+export const Error = styled.p`
+  transition: all 300ms ease-in-out;
+
+  width: 90%;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  color: ${(props) => {
+    if (props.status) {
+      return `#ff7373`;
+    } else {
+      return `red`;
+    }
+  }};
+  height: 0.8rem;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 `;
 
 const Styled = {
@@ -121,6 +153,8 @@ const Styled = {
   VisibleWrapper,
   SectionWrapper,
   Row,
+  Error,
+  Column,
 };
 
 export default Styled;

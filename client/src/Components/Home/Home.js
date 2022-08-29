@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from "../Global/Styles";
 import Spinner from "./Spinner";
-import { useThemeContext } from "../Providers/ThemeProvider";
+import { useThemeContext } from "../../Providers/ThemeProvider";
 import {
   HomeContainer,
   HeroContainer,

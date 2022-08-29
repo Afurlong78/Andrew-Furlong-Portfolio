@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Styled from "../Global/Styles";
-import { useProjectContext } from "../Providers/ProjectProvider";
-import { useThemeContext } from "../Providers/ThemeProvider";
+import { useProjectContext } from "../../Providers/ProjectProvider";
+import { useThemeContext } from "../../Providers/ThemeProvider";
 import { useInView } from "react-intersection-observer";
-import LightBtns from "./LightBtns";
-import DarkBtns from "./DarkBtns";
 import {
   Container,
   ProjectHeader,
@@ -74,7 +72,10 @@ function Projects() {
       <Styled.VisibleWrapper ref={headerRef} visible={headerVisible}>
         <HeaderRow>
           <ProjectHeader status={theme}>
-            <strong>My Projects</strong>
+            My{" "}
+            <strong style={theme ? { color: "white" } : { color: "#6D97FF" }}>
+              Projects
+            </strong>
           </ProjectHeader>
           {/* <ResumeDownload>Resume</ResumeDownload> */}
         </HeaderRow>
@@ -119,11 +120,13 @@ function Projects() {
                 more. Click below to check it out!
               </CardText>
               <SkillsRow>
-                <Skill>
-                  <IconContainer>
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
                     <SiJavascript style={{ height: "70%", width: "70%" }} />
                   </IconContainer>
-                  <SkillTextContainer>Javascript</SkillTextContainer>
+                  <SkillTextContainer status={theme}>
+                    Javascript
+                  </SkillTextContainer>
                 </Skill>
 
                 <Skill status={theme}>
@@ -137,11 +140,13 @@ function Projects() {
                   </SkillTextContainer>
                 </Skill>
 
-                <Skill>
-                  <IconContainer>
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
                     <SiMongodb />
                   </IconContainer>
-                  <SkillTextContainer>MongoDB</SkillTextContainer>
+                  <SkillTextContainer status={theme}>
+                    MongoDB
+                  </SkillTextContainer>
                 </Skill>
 
                 <Skill status={theme}>
@@ -195,17 +200,19 @@ function Projects() {
                 the site and create the front end.
               </CardText>
               <SkillsRow>
-                <Skill>
-                  <IconContainer>
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
                     <SiJavascript style={{ height: "70%", width: "70%" }} />
                   </IconContainer>
-                  <SkillTextContainer>Javascript</SkillTextContainer>
+                  <SkillTextContainer status={theme}>
+                    Javascript
+                  </SkillTextContainer>
                 </Skill>
-                <Skill>
-                  <IconContainer>
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
                     <SiHtml5 />
                   </IconContainer>
-                  <SkillTextContainer>HTML</SkillTextContainer>
+                  <SkillTextContainer status={theme}>HTML</SkillTextContainer>
                 </Skill>
 
                 <Skill status={theme}>
@@ -251,17 +258,19 @@ function Projects() {
                 queries and local storage.
               </CardText>
               <SkillsRow>
-                <Skill>
-                  <IconContainer>
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
                     <SiJavascript style={{ height: "70%", width: "70%" }} />
                   </IconContainer>
-                  <SkillTextContainer>Javascript</SkillTextContainer>
+                  <SkillTextContainer status={theme}>
+                    Javascript
+                  </SkillTextContainer>
                 </Skill>
-                <Skill>
-                  <IconContainer>
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
                     <SiHtml5 />
                   </IconContainer>
-                  <SkillTextContainer>HTML</SkillTextContainer>
+                  <SkillTextContainer status={theme}>HTML</SkillTextContainer>
                 </Skill>
 
                 <Skill status={theme}>

@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const HomeContainer = styled.div`
   width: 100%;
@@ -36,9 +35,9 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: start;
 
-  @media all and (max-height: 790px) {
-    /* margin-top: 190px; */
-  }
+  /* @media all and (max-height: 790px) {
+    margin-top: 190px;
+  } */
 
   @media all and (max-width: 900px) {
     width: 85%;
@@ -47,10 +46,10 @@ export const HeroContainer = styled.div`
 
 const heroAnimation = keyframes`
   0%{
-    opacity: 0;
+    transform: translateX(30px);
   }
   100%{
-    opacity: 1;
+    transform: translateX(0px);
   }
 `;
 
@@ -80,12 +79,21 @@ export const HeroText = styled.h1`
   letter-spacing: 0.8px;
 
   transition: all 300ms;
-  animation: 500ms ${heroAnimation} ease-in-out;
+  animation: 400ms ${heroAnimation} ease-in-out;
 
   @media all and (max-width: 900px) {
     font-size: 2rem;
 
     margin-left: 0px;
+  }
+`;
+
+const subHeroAnimation = keyframes`
+  0%{
+    transform: translateX(30px);
+  }
+  100%{
+    transform: translateX(0px);
   }
 `;
 
@@ -108,12 +116,21 @@ export const SubHeroText = styled.h3`
   letter-spacing: 0.8px;
 
   transition: all 300ms;
-  animation: 500ms ${heroAnimation} ease-in-out;
+  animation: 600ms ${subHeroAnimation} ease-in-out;
 
   @media all and (max-width: 900px) {
     font-size: 1.5rem;
     margin-top: -15px;
     margin-left: 0px;
+  }
+`;
+
+const smallHeroAnimation = keyframes`
+  0%{
+    transform: translateX(30px);
+  }
+  100%{
+    transform: translateX(0px);
   }
 `;
 
@@ -136,7 +153,7 @@ export const SmallHeroText = styled.p`
   letter-spacing: 0.8px;
 
   transition: all 300ms;
-  animation: 500ms ${heroAnimation} ease-in-out;
+  animation: 800ms ${smallHeroAnimation} ease-in-out;
 
   @media all and (max-width: 900px) {
     font-size: 1rem;
@@ -153,7 +170,7 @@ export const BtnRow = styled.div`
   align-items: start;
 
   transition: all 300ms;
-  animation: 500ms ${heroAnimation} ease-in-out;
+  animation: 800ms ${smallHeroAnimation} ease-in-out;
 
   @media all and (max-width: 900px) {
     margin-left: 0px;

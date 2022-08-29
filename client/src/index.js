@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { ThemeProvider } from "./Components/Providers/ThemeProvider";
-import { ContactProvider } from "./Components/Providers/ContactProvider";
-import { ObserverProvider } from "./Components/Providers/ObserverProvider";
-import { ProjectProvider } from "./Components/Providers/ProjectProvider";
+import { ThemeProvider } from "./Providers/ThemeProvider";
+import { ContactProvider } from "./Providers/ContactProvider";
+import { ObserverProvider } from "./Providers/ObserverProvider";
+import { ProjectProvider } from "./Providers/ProjectProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

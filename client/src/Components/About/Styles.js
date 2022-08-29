@@ -186,11 +186,13 @@ export const Skill = styled.div`
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
 
+  transition: all 300ms ease-in-out;
+
   background: ${(props) => {
     if (props.status) {
       return `white`;
     } else {
-      return `#292929`;
+      return `#6D97FF`;
     }
   }};
 
