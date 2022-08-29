@@ -82,8 +82,8 @@ function Contact() {
           </Styled.HeaderText>
         </Styled.VisibleWrapper>
 
-        <MainContact ref={goodbyeRef} visible={goodbyeVisible}>
-          <GoodbyeTextContainer>
+        <MainContact >
+          <GoodbyeTextContainer ref={goodbyeRef} visible={goodbyeVisible}>
             <GoodbyeText status={theme}>
               {loading ? (
                 <SpinnerContainer>

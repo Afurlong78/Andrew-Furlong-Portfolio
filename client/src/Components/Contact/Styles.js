@@ -10,24 +10,6 @@ export const MainContact = styled.div`
 
   margin-top: 20px;
 
-  transition: all 500ms ease-in-out;
-
-  opacity: ${(props) => {
-    if (props.visible) {
-      return `1`;
-    } else {
-      return `0`;
-    }
-  }};
-
-  transform: ${(props) => {
-    if (props.visible) {
-      return `translateX(0px)`;
-    } else {
-      return `translateX(20px)`;
-    }
-  }};
-
   @media all and (max-width: 1024px) {
     flex-direction: column;
   }
@@ -56,9 +38,9 @@ export const FormContainer = styled.form`
 
   transform: ${(props) => {
     if (props.visible) {
-      return `translateX(0px)`;
+      return `translateY(0px)`;
     } else {
-      return `translateX(20px)`;
+      return `translateY(20px)`;
     }
   }};
 
@@ -82,6 +64,24 @@ export const GoodbyeTextContainer = styled.div`
   align-items: center;
 
   padding: 10px;
+
+  transition: all 500ms ease-in-out;
+
+  opacity: ${(props) => {
+    if (props.visible) {
+      return `1`;
+    } else {
+      return `0`;
+    }
+  }};
+
+  transform: ${(props) => {
+    if (props.visible) {
+      return `translateY(0px)`;
+    } else {
+      return `translateY(20px)`;
+    }
+  }};
 
   @media all and (max-width: 1024px) {
     flex-direction: row;

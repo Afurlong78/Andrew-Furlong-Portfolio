@@ -113,7 +113,7 @@ export const SkillsContainer = styled.div`
   transition: all 100ms ease-in-out;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   justify-content: center;
   align-items: center;
 
