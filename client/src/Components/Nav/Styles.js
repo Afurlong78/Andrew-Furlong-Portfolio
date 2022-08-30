@@ -201,12 +201,12 @@ export const MobileNavIcon = styled.button`
   display: none;
   border: none;
   color: white;
-  font-size: 50px;
 
   background: transparent;
 
-  height: 50px;
-  width: 50px;
+  /* height: 50px;
+  width: 50px; */
+  font-size: 3rem;
 
   cursor: pointer;
 
@@ -225,7 +225,7 @@ export const MobileNavIcon = styled.button`
   transition: transform 0.2s;
 
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
 `;
 
