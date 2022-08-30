@@ -227,10 +227,6 @@ export const MobileNavIcon = styled.button`
   &:hover {
     transform: scale(1.3);
   }
-
-  @media all and (max-width: 460px) {
-    font-size: 1.5rem;
-  }
 `;
 
 export const MobileNav = styled.div`
