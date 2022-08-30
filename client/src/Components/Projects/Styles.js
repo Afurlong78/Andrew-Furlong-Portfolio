@@ -382,7 +382,7 @@ export const DarkBBBtn = styled.button`
   }
 
   @media all and (max-width: 500px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 9rem;
   }
 `;
@@ -424,7 +424,7 @@ export const DarkNFBtn = styled.button`
   }
 
   @media all and (max-width: 500px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 9rem;
   }
 `;
@@ -466,7 +466,7 @@ export const DarkWWBtn = styled.button`
   }
 
   @media all and (max-width: 500px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 9rem;
   }
 `;
@@ -508,7 +508,7 @@ export const DarkGUBtn = styled.button`
   }
 
   @media all and (max-width: 500px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 9rem;
   }
 `;
@@ -973,7 +973,7 @@ export const Skill = styled.div`
     if (props.status) {
       return `white`;
     } else {
-      return `#6d97ff`;
+      return `#7e94ff`;
     }
   }};
 
@@ -1126,6 +1126,12 @@ export const CardBtn = styled.button`
   @media all and (max-width: 1024px) {
     color: white;
     border: 2px solid white;
+
+    &:hover {
+      background-image: linear-gradient(to right, transparent 50%, white 50%);
+      border: 2px solid white;
+      color: #292929;
+    }
   }
 
   @media all and (max-width: 900px) {

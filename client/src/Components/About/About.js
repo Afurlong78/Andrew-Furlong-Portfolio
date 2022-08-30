@@ -60,7 +60,7 @@ function About() {
       <Styled.Container id="about">
         <Styled.VisibleWrapper visible={headerVisible}>
           <HeaderText status={theme} ref={headerRef} id="header">
-            <strong style={theme ? { color: "white" } : { color: "#6D97FF" }}>
+            <strong style={theme ? { color: "white" } : { color: "#7e94ff" }}>
               About
             </strong>{" "}
             Me

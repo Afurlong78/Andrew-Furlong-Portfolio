@@ -75,7 +75,7 @@ function Contact() {
 
         <Styled.VisibleWrapper ref={headerRef} visible={headerVisible}>
           <Styled.HeaderText status={theme}>
-            <strong style={theme ? { color: "white" } : { color: "#6D97FF" }}>
+            <strong style={theme ? { color: "white" } : { color: "#7e94ff" }}>
               Contact
             </strong>{" "}
             Me

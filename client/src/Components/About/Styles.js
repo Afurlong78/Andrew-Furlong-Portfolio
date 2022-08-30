@@ -192,7 +192,7 @@ export const Skill = styled.div`
     if (props.status) {
       return `white`;
     } else {
-      return `#6D97FF`;
+      return `#7e94ff`;
     }
   }};
 

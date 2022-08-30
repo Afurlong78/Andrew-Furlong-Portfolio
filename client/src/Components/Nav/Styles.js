@@ -204,8 +204,6 @@ export const MobileNavIcon = styled.button`
 
   background: transparent;
 
-  /* height: 50px;
-  width: 50px; */
   font-size: 3rem;
 
   cursor: pointer;

@@ -295,7 +295,7 @@ export const Input = styled.input`
     if (props.status) {
       return `2px solid white`;
     } else {
-      return `2px solid #6D97FF`;
+      return `2px solid #7e94ff`;
     }
   }};
 
@@ -365,7 +365,7 @@ export const TextContainer = styled.textarea`
     if (props.status) {
       return `2px solid white`;
     } else {
-      return `2px solid #6D97FF`;
+      return `2px solid #7e94ff`;
     }
   }};
 
@@ -385,7 +385,7 @@ export const IconContainer = styled.div`
     if (props.status) {
       return `#292929`;
     } else {
-      return `#6D97FF`;
+      return `#7e94ff`;
     }
   }};
 

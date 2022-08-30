@@ -49,6 +49,7 @@ import {
   SiBootstrap,
 } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
+import { ImEye } from "react-icons/im";
 
 function Projects() {
   const { theme } = useThemeContext();
@@ -73,7 +74,7 @@ function Projects() {
         <HeaderRow>
           <ProjectHeader status={theme}>
             My{" "}
-            <strong style={theme ? { color: "white" } : { color: "#6D97FF" }}>
+            <strong style={theme ? { color: "white" } : { color: "#7e94ff" }}>
               Projects
             </strong>
           </ProjectHeader>
@@ -107,9 +108,12 @@ function Projects() {
               </CardHeader>
               <BtnWrapper status={toggle}>
                 <CardBtnRow>
-                  <CardBtn tabIndex="-1">View</CardBtn>
                   <CardBtn tabIndex="-1">
-                    <BiGitBranch />
+                    <ImEye style={{ marginRight: "5px" }} />
+                    View
+                  </CardBtn>
+                  <CardBtn tabIndex="-1">
+                    <BiGitBranch style={{ marginRight: "5px" }} />
                     Git
                   </CardBtn>
                 </CardBtnRow>
@@ -186,9 +190,12 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">View</CardBtn>
                     <CardBtn tabIndex="-1">
-                      <BiGitBranch />
+                      <ImEye style={{ marginRight: "5px" }} />
+                      View
+                    </CardBtn>
+                    <CardBtn tabIndex="-1">
+                      <BiGitBranch style={{ marginRight: "5px" }} />
                       Git
                     </CardBtn>
                   </CardBtnRow>
@@ -245,9 +252,12 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">View</CardBtn>
                     <CardBtn tabIndex="-1">
-                      <BiGitBranch />
+                      <ImEye style={{ marginRight: "5px" }} />
+                      View
+                    </CardBtn>
+                    <CardBtn tabIndex="-1">
+                      <BiGitBranch style={{ marginRight: "5px" }} />
                       Git
                     </CardBtn>
                   </CardBtnRow>
@@ -303,9 +313,12 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">View</CardBtn>
                     <CardBtn tabIndex="-1">
-                      <BiGitBranch />
+                      <ImEye style={{ marginRight: "5px" }} />
+                      View
+                    </CardBtn>
+                    <CardBtn tabIndex="-1">
+                      <BiGitBranch style={{ marginRight: "5px" }} />
                       Git
                     </CardBtn>
                   </CardBtnRow>
