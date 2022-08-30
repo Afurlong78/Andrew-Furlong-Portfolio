@@ -201,7 +201,7 @@ export const MobileNavIcon = styled.button`
   display: none;
   border: none;
   color: white;
-  font-size: 2.5rem;
+  font-size: 50px;
 
   background: transparent;
 

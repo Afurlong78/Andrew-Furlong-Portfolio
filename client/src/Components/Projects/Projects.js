@@ -107,7 +107,7 @@ function Projects() {
               </CardHeader>
               <BtnWrapper status={toggle}>
                 <CardBtnRow>
-                  <CardBtn tabIndex="-1">View Project</CardBtn>
+                  <CardBtn tabIndex="-1">View</CardBtn>
                   <CardBtn tabIndex="-1">
                     <BiGitBranch />
                     Git
@@ -186,7 +186,7 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">View Project</CardBtn>
+                    <CardBtn tabIndex="-1">View</CardBtn>
                     <CardBtn tabIndex="-1">
                       <BiGitBranch />
                       Git
@@ -245,7 +245,7 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">View Project</CardBtn>
+                    <CardBtn tabIndex="-1">View</CardBtn>
                     <CardBtn tabIndex="-1">
                       <BiGitBranch />
                       Git
@@ -303,7 +303,7 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">View Project</CardBtn>
+                    <CardBtn tabIndex="-1">View</CardBtn>
                     <CardBtn tabIndex="-1">
                       <BiGitBranch />
                       Git
