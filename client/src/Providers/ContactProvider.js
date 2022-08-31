@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef } from "react";
+import React, { useState, useContext } from "react";
 import axios from "axios";
 
 const ContactContext = React.createContext();
@@ -9,10 +9,10 @@ export const useContactContext = () => {
 
 export function ContactProvider({ children }) {
   //request link
-  const contact_url = "http://localhost:5000/api/contact";
+  // const contact_url = "http://localhost:5000/api/contact";
+  const contact_url = "https://andrew-portfolio-site.herokuapp.com/api/contact";
 
   //contact state
-  // const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contactSubject, setContactSubject] = useState("");
   const [contactMessage, setContactMessage] = useState("");
@@ -54,7 +54,7 @@ export function ContactProvider({ children }) {
         setMessageError("");
       })
       .catch((error) => {
-        // console.log(error.response.data, "error");
+        console.log(error.response.data, "error");
         setSuccess(false);
         setLoading(false);
 

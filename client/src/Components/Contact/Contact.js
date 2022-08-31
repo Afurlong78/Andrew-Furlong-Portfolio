@@ -69,8 +69,18 @@ function Contact() {
             <SuccessHeaderText>
               Congratulations! <GiPartyPopper className="ms-3" />
             </SuccessHeaderText>
-            Your Email has been sent! I will reply in a timely fashion. Thanks!
+            Thanks for reach out, your Email has been sent! I will reply in a
+            timely fashion. Thanks!
           </SuccessTextContainer>
+        </SuccessfulRegistryContainer>
+
+        <SuccessfulRegistryContainer status={loading}>
+          <SpinnerContainer>
+            Sending...
+            <RedSpinner />
+            <BlueSpinner />
+            <GreenSpinner />
+          </SpinnerContainer>
         </SuccessfulRegistryContainer>
 
         <Styled.VisibleWrapper ref={headerRef} visible={headerVisible}>
@@ -82,37 +92,16 @@ function Contact() {
           </Styled.HeaderText>
         </Styled.VisibleWrapper>
 
-        <MainContact >
+        <MainContact>
           <GoodbyeTextContainer ref={goodbyeRef} visible={goodbyeVisible}>
             <GoodbyeText status={theme}>
-              {loading ? (
-                <SpinnerContainer>
-                  Sending...
-                  <RedSpinner />
-                  <BlueSpinner />
-                  <GreenSpinner />
-                </SpinnerContainer>
-              ) : (
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <div>
-                    Thanks so much for visiting my site, it truly means a lot! I
-                    hope you enjoyed your visit, please feel free to reach out
-                    with any feedback, comments or even potential buisness
-                    oppertunities.
-                  </div>
-                  <IconContainer status={theme}>
-                    <SiMinutemailer style={{ height: "100%", width: "100%" }} />
-                  </IconContainer>
-                </div>
-              )}
+              Thanks for visiting my site, it truly means a lot! I hope you
+              enjoyed your visit, please feel free to reach out with any
+              feedback, comments or even potential buisness oppertunities.
             </GoodbyeText>
+            <IconContainer status={theme}>
+              <SiMinutemailer style={{ height: "100%", width: "100%" }} />
+            </IconContainer>
           </GoodbyeTextContainer>
 
           <FormContainer

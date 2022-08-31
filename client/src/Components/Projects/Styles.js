@@ -1055,7 +1055,7 @@ export const BtnWrapper = styled.div`
   }};
 `;
 
-export const CardBtn = styled.button`
+export const CardBtn = styled.a`
   height: 3rem;
   width: 10rem;
 

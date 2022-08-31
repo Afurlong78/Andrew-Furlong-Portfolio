@@ -108,11 +108,19 @@ function Projects() {
               </CardHeader>
               <BtnWrapper status={toggle}>
                 <CardBtnRow>
-                  <CardBtn tabIndex="-1">
+                  <CardBtn
+                    tabIndex="-1"
+                    target="_blank"
+                    href="https://better-budget-smoky.vercel.app/"
+                  >
                     <ImEye style={{ marginRight: "5px" }} />
                     View
                   </CardBtn>
-                  <CardBtn tabIndex="-1">
+                  <CardBtn
+                    tabIndex="-1"
+                    target="_blank"
+                    href="https://github.com/Afurlong78/BetterBudget"
+                  >
                     <BiGitBranch style={{ marginRight: "5px" }} />
                     Git
                   </CardBtn>
@@ -190,11 +198,19 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">
+                    <CardBtn
+                      tabIndex="-1"
+                      target="_blank"
+                      href="https://nearfallfishingcharters.com/"
+                    >
                       <ImEye style={{ marginRight: "5px" }} />
                       View
                     </CardBtn>
-                    <CardBtn tabIndex="-1">
+                    <CardBtn
+                      tabIndex="-1"
+                      target="_blank"
+                      href="https://github.com/saltoriousSIG/nearFallFrontEnd"
+                    >
                       <BiGitBranch style={{ marginRight: "5px" }} />
                       Git
                     </CardBtn>
@@ -313,7 +329,11 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">
+                    <CardBtn
+                      tabIndex="-1"
+                      target="_blank"
+                      href="https://gustakes.gg/"
+                    >
                       <ImEye style={{ marginRight: "5px" }} />
                       View
                     </CardBtn>

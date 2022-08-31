@@ -152,7 +152,8 @@ export const SuccessfulRegistryContainer = styled.div`
 
 export const SuccessTextContainer = styled.div`
   height: 20rem;
-  width: 50%;
+  width: 90%;
+  max-width: 500px;
 
   padding: 15px;
 
@@ -170,8 +171,6 @@ export const SuccessTextContainer = styled.div`
   font-size: 1rem;
 
   font-family: "Montserrat", sans-serif;
-
-  border: 2px solid #292929;
 `;
 
 export const SuccessHeaderText = styled.h3`
@@ -408,6 +407,8 @@ export const IconContainer = styled.div`
 export const SpinnerContainer = styled.div`
   height: 200px;
   width: 200px;
+
+  color: white;
 
   display: flex;
   justify-content: center;
