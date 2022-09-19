@@ -4,20 +4,17 @@ import "./index.css";
 import App from "./App";
 import { ThemeProvider } from "./Providers/ThemeProvider";
 import { ContactProvider } from "./Providers/ContactProvider";
-import { ObserverProvider } from "./Providers/ObserverProvider";
 import { ProjectProvider } from "./Providers/ProjectProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ProjectProvider>
-      <ObserverProvider>
-        <ContactProvider>
-          <ThemeProvider>
-            <App />
-          </ThemeProvider>
-        </ContactProvider>
-      </ObserverProvider>
+      <ContactProvider>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </ContactProvider>
     </ProjectProvider>
   </React.StrictMode>
 );

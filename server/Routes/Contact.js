@@ -21,7 +21,7 @@ router.post("/contact", (req, res) => {
     from: req.body.email,
     to: process.env.MY_EMAIL,
     subject: req.body.subject,
-    text: req.body.message,
+    text: `from: ${req.body.email}, message: ${req.body.message}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

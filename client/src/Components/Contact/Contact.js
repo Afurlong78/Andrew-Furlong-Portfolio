@@ -66,10 +66,8 @@ function Contact() {
             <AiFillCloseCircle style={{ height: "100%", width: "100%" }} />
           </CloseSuccessfulRegistry>
           <SuccessTextContainer>
-            <SuccessHeaderText>
-              Congratulations! <GiPartyPopper className="ms-3" />
-            </SuccessHeaderText>
-            Thanks for reach out, your Email has been sent! I will reply in a
+            <SuccessHeaderText>Email Sent!</SuccessHeaderText>
+            Thanks for reaching out, your Email has been sent! I will reply in a
             timely fashion. Thanks!
           </SuccessTextContainer>
         </SuccessfulRegistryContainer>

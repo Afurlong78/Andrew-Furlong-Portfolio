@@ -9,8 +9,8 @@ export const useContactContext = () => {
 
 export function ContactProvider({ children }) {
   //request link
-  // const contact_url = "http://localhost:5000/api/contact";
-  const contact_url = "https://andrew-portfolio-site.herokuapp.com/api/contact";
+  const contact_url =
+    "https://portfolio-railway-production-1a0f.up.railway.app/api/contact";
 
   //contact state
   const [email, setEmail] = useState("");

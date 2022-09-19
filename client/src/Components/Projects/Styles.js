@@ -384,6 +384,12 @@ export const DarkBBBtn = styled.button`
   @media all and (max-width: 500px) {
     font-size: 0.7rem;
     width: 9rem;
+
+    &:hover {
+      transform: scale(1);
+      background: #575656;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
   }
 `;
 
@@ -426,6 +432,12 @@ export const DarkNFBtn = styled.button`
   @media all and (max-width: 500px) {
     font-size: 0.7rem;
     width: 9rem;
+
+    &:hover {
+      transform: scale(1);
+      background: #575656;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
   }
 `;
 
@@ -468,6 +480,12 @@ export const DarkWWBtn = styled.button`
   @media all and (max-width: 500px) {
     font-size: 0.7rem;
     width: 9rem;
+
+    &:hover {
+      transform: scale(1);
+      background: #575656;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
   }
 `;
 
@@ -510,6 +528,12 @@ export const DarkGUBtn = styled.button`
   @media all and (max-width: 500px) {
     font-size: 0.7rem;
     width: 9rem;
+
+    &:hover {
+      transform: scale(1);
+      background: #575656;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
   }
 `;
 

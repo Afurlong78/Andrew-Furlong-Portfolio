@@ -111,7 +111,7 @@ function Projects() {
                   <CardBtn
                     tabIndex="-1"
                     target="_blank"
-                    href="https://better-budget-smoky.vercel.app/"
+                    href="https://betterbudget-1-0.vercel.app/"
                   >
                     <ImEye style={{ marginRight: "5px" }} />
                     View
@@ -268,11 +268,19 @@ function Projects() {
               <CardBtnRow>
                 <BtnWrapper status={toggle}>
                   <CardBtnRow>
-                    <CardBtn tabIndex="-1">
+                    <CardBtn
+                      tabIndex="-1"
+                      target="_blank"
+                      href="https://welcome-weather.vercel.app/"
+                    >
                       <ImEye style={{ marginRight: "5px" }} />
                       View
                     </CardBtn>
-                    <CardBtn tabIndex="-1">
+                    <CardBtn
+                      tabIndex="-1"
+                      target="_blank"
+                      href="https://github.com/Afurlong78/welcome-weather"
+                    >
                       <BiGitBranch style={{ marginRight: "5px" }} />
                       Git
                     </CardBtn>

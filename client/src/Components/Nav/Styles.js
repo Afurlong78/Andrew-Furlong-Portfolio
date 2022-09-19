@@ -137,7 +137,7 @@ export const LogoThemeContainer = styled.div`
 
 export const ThemeingPill = styled.button`
   height: 3rem;
-  width: 6rem;
+  width: 3rem;
 
   cursor: pointer;
 
@@ -158,7 +158,7 @@ export const ThemeingPill = styled.button`
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 0.8px;
-  font-size: 1.2rem;
+  font-size: 2rem;
 
   display: flex;
   justify-content: center;

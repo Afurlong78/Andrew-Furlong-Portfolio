@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useThemeContext } from "../../Providers/ThemeProvider";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FaSun } from "react-icons/fa";
 import {
   NavContainer,
   NavLogo,
@@ -33,7 +35,7 @@ function Nav() {
           <strong>A</strong>f
         </NavLogo>
         <ThemeingPill status={theme} onClick={themeHandler}>
-          {!theme ? "Dark" : "Light"}
+          {!theme ? <BsFillMoonStarsFill /> : <FaSun />}
         </ThemeingPill>
       </LogoThemeContainer>
 
