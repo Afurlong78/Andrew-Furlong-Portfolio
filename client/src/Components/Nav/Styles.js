@@ -128,7 +128,7 @@ export const LogoThemeContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin-left: 50px;
+  margin-left: 30px;
 
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -155,7 +155,7 @@ export const ThemeingPill = styled.button`
   border: 2px solid transparent;
   border-radius: 4px;
 
-  &:hover{
+  &:hover {
     border: 2px solid transparent;
     background: rgba(255, 255, 255, 0.2);
   }
