@@ -141,55 +141,23 @@ export const ThemeingPill = styled.button`
 
   cursor: pointer;
 
-  margin-left: 15px;
-
-  background: transparent;
-  color: ${(props) => {
-    if (props.status) {
-      return `#292929`;
-    } else {
-      return `white`;
-    }
-  }};
-  text-decoration: none;
-
-  z-index: 2;
-
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  font-size: 2rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: none;
-  border-radius: 8px;
+  margin-left: 15px;
 
-  margin-right: 20px;
+  z-index: 2;
 
-  transition: all 300ms;
+  transition: all 300ms ease-in-out;
 
-  background-image: ${(props) => {
-    if (props.status) {
-      return `linear-gradient(to right, white 50%, #575656 50%)`;
-    } else {
-      return `linear-gradient(to right, #575656 50%, white 50%)`;
-    }
-  }};
-  background-size: 200%;
-  background-position: 0%;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
 
-  &:hover {
-    background-position: 100%;
-    color: ${(props) => {
-      if (props.status) {
-        return `white`;
-      } else {
-        return `#575656`;
-      }
-    }};
+  &:hover{
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.2);
   }
 `;
 
