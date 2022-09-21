@@ -54,7 +54,7 @@ function Nav() {
       </NavLinkContainer>
 
       <MobileNavIcon onClick={mobileHandler}>
-        <GiHamburgerMenu />
+        <GiHamburgerMenu style={{fontSize:"3rem"}}/>
       </MobileNavIcon>
 
       <MobileNav status={mobile}>

@@ -23,7 +23,6 @@ import {
   Purple,
   Pink,
   HomeId,
-  BtnExperiment,
 } from "./Styles";
 
 function Home() {

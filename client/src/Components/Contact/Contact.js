@@ -3,7 +3,6 @@ import Styled from "../Global/Styles";
 import { useInView } from "react-intersection-observer";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
-import { GiPartyPopper } from "react-icons/gi";
 import { useThemeContext } from "../../Providers/ThemeProvider";
 import { useContactContext } from "../../Providers/ContactProvider";
 import {
@@ -68,7 +67,7 @@ function Contact() {
           <SuccessTextContainer>
             <SuccessHeaderText>Email Sent!</SuccessHeaderText>
             Thanks for reaching out, your Email has been sent! I will reply in a
-            timely fashion. Thanks!
+            timely fashion.
           </SuccessTextContainer>
         </SuccessfulRegistryContainer>
 

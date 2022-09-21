@@ -127,6 +127,11 @@ function Projects() {
                 </CardBtnRow>
               </BtnWrapper>
               <CardText>
+                <div style={{ marginBottom: "5px" }}>
+                  {" "}
+                  <strong>Role:</strong> Creator
+                </div>
+                <strong style={{ paddingRight: "5px" }}>Description:</strong>
                 BetterBudget is a full stack application made with MERN stack.
                 This app features user creation, user validation, login and much
                 more. Click below to check it out!
@@ -218,9 +223,15 @@ function Projects() {
                 </BtnWrapper>
               </CardBtnRow>
               <CardText>
-                The NearFall Fishing is my first professional experience. I was
-                brought onto this project to assist in developing the theme of
-                the site and create the front end.
+                <div style={{ marginBottom: "5px" }}>
+                  {" "}
+                  <strong>Role:</strong> Creator
+                </div>
+                <strong style={{ paddingRight: "5px" }}>Description:</strong>The
+                NearFall Fishing is my first professional free lance experience.
+                I was brought onto this project to assist in developing the
+                theme of the site and create the front end and paypal
+                functionality.
               </CardText>
               <SkillsRow>
                 <Skill status={theme}>
@@ -288,8 +299,13 @@ function Projects() {
                 </BtnWrapper>
               </CardBtnRow>
               <CardText>
-                Welcome Weather is a simple application that features api
-                queries and local storage.
+                <div style={{ marginBottom: "5px" }}>
+                  {" "}
+                  <strong>Role:</strong> Creator
+                </div>
+                <strong style={{ paddingRight: "5px" }}>Description:</strong>
+                Welcome Weather is a simple weather application that features api
+                queries, local storage and a 5 day weather forecast.
               </CardText>
               <SkillsRow>
                 <Skill status={theme}>
@@ -345,18 +361,78 @@ function Projects() {
                       <ImEye style={{ marginRight: "5px" }} />
                       View
                     </CardBtn>
-                    <CardBtn tabIndex="-1">
+                    {/* <CardBtn tabIndex="-1">
                       <BiGitBranch style={{ marginRight: "5px" }} />
                       Git
-                    </CardBtn>
+                    </CardBtn> */}
                   </CardBtnRow>
                 </BtnWrapper>
               </CardBtnRow>
               <CardText>
-                Welcome Weather is a simple application that features api
-                queries and local storage.
+                <div style={{ marginBottom: "5px" }}>
+                  {" "}
+                  <strong>Role:</strong> Jr front end engineer
+                </div>
+                <strong style={{ paddingRight: "5px" }}>Description:</strong>
+                GUStakes is a fullstack MERN site based off the game Gods
+                Unchained. Gustakes utilizes blockchain technology, allowing
+                players to create stakes on various match types.
               </CardText>
-              <SkillsRow></SkillsRow>
+              <SkillsRow>
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiJavascript style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    Javascript
+                  </SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiStyledcomponents
+                      style={{ height: "70%", width: "70%" }}
+                    />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    Styled Components
+                  </SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiMongodb />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    MongoDB
+                  </SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiExpress style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    Express
+                  </SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiReact style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>React</SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiNodedotjs style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    Node JS
+                  </SkillTextContainer>
+                </Skill>
+              </SkillsRow>
             </GUContent>
           </GUStakes>
         </Project>

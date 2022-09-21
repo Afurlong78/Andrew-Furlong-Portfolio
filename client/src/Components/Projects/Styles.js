@@ -579,7 +579,7 @@ export const BBMedia = styled.div`
 
   border-radius: 8px 0px 0px 8px;
 
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.25)),
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.1)),
     url(${betterBudget});
   background-size: cover;
 
@@ -671,7 +671,7 @@ export const NFMedia = styled.div`
 
   border-radius: 8px 0px 0px 8px;
 
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.25)),
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.1)),
     url(${nearFall});
   background-size: cover;
 
@@ -762,7 +762,7 @@ export const WWMedia = styled.div`
 
   border-radius: 8px 0px 0px 8px;
 
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.25)),
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.1)),
     url(${weather});
   background-size: cover;
 
@@ -854,7 +854,7 @@ export const GUMedia = styled.div`
 
   border-radius: 8px 0px 0px 8px;
 
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.25)),
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.1)),
     url(${guStakes});
   background-size: cover;
 

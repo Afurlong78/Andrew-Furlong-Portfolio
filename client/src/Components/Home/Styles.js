@@ -531,6 +531,7 @@ export const Orange = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: -4px 6px 6px 0px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -565,6 +566,18 @@ export const Orange1 = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: -4px 7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  @media all and (max-height: 825px) {
+    display: none;
+  }
+
+  @media all and (min-height: 1055px) {
+    top: 850px;
+  }
+  @media all and (min-height: 1210px) {
+    top: 950px;
   }
 `;
 
@@ -599,6 +612,7 @@ export const Orange2 = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: 4px 10px 10px 0px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -633,6 +647,7 @@ export const Green = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: 4px 10px 10px 0px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -667,6 +682,11 @@ export const Green1 = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: 4px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  @media all and (max-height: 915px) {
+    display: none;
   }
 `;
 
@@ -701,6 +721,7 @@ export const Blue = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: -4px 7px 7px 0px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -735,6 +756,19 @@ export const Blue1 = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: -4px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  @media all and (max-height: 910px) {
+    display: none;
+  }
+
+  @media all and (min-height: 1055px) {
+    top: 960px;
+  }
+
+  @media all and (min-height: 1210px) {
+    top: 1060px;
   }
 `;
 
@@ -769,6 +803,7 @@ export const Red = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.2);
   }
 `;
 export const HomeId = styled.div`
@@ -817,6 +852,7 @@ export const Red1 = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -851,6 +887,19 @@ export const Yellow = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: -4px 7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  @media all and (max-height: 925px) {
+    display: none;
+  }
+
+  @media all and (min-height: 1055px) {
+    top: 940px;
+  }
+
+  @media all and (min-height: 1210px) {
+    top: 1040px;
   }
 `;
 
@@ -885,6 +934,7 @@ export const Purple = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: -4px 7px 7px 0px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -919,5 +969,10 @@ export const Pink = styled.div`
 
   &:hover {
     transform: scale(1.2);
+    box-shadow: -4px 7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  @media all and (max-height: 917px) {
+    display: none;
   }
 `;

@@ -139,6 +139,8 @@ export const ThemeingPill = styled.button`
   height: 3rem;
   width: 3rem;
 
+  font-size: 3rem;
+
   cursor: pointer;
 
   display: flex;
@@ -168,7 +170,13 @@ export const ThemeingPill = styled.button`
 export const MobileNavIcon = styled.button`
   display: none;
   border: none;
+
   color: white;
+
+  height: 3rem;
+  width: 3rem;
+
+  padding: 0px;
 
   background: transparent;
 
@@ -188,7 +196,7 @@ export const MobileNavIcon = styled.button`
     align-items: center;
   }
 
-  transition: transform 0.2s;
+  transition: transform 0.2s ease-in-out;
 
   &:hover {
     transform: scale(1.2);
@@ -204,7 +212,7 @@ export const MobileNav = styled.div`
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 
   margin-top: 90px;
@@ -241,7 +249,12 @@ export const MobileNavContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+  margin-top: 90px;
   margin-bottom: 90px;
+
+  @media all and (max-height: 525px){
+    margin-top: 0px;
+  }
 `;
 
 export const MobileNavBtn = styled.a`
@@ -249,7 +262,7 @@ export const MobileNavBtn = styled.a`
   width: 10rem;
 
   border-radius: 8px;
-  border: 2px solid #292929;
+  border: 2px solid transparent;
 
   text-decoration: none;
 
@@ -271,8 +284,9 @@ export const MobileNavBtn = styled.a`
 
   transition: all 200ms ease-in-out;
   &:hover {
-    transform: scale(1.1);
-    box-shadow: -2px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    background: transparent;
+    color: white;
   }
 `;
 
