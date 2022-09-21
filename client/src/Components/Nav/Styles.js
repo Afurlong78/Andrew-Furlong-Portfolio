@@ -139,8 +139,6 @@ export const ThemeingPill = styled.button`
   height: 3rem;
   width: 3rem;
 
-  font-size: 3rem;
-
   cursor: pointer;
 
   display: flex;
@@ -226,7 +224,7 @@ export const MobileNav = styled.div`
 
   box-shadow: -4px 10px 10px 0px rgba(0, 0, 0, 0.2);
 
-  transition: transform 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
   transform: ${(props) => {
     if (props.status) {
       return `translateX(0%)`;
@@ -252,7 +250,7 @@ export const MobileNavContainer = styled.div`
   margin-top: 90px;
   margin-bottom: 90px;
 
-  @media all and (max-height: 525px){
+  @media all and (max-height: 525px) {
     margin-top: 0px;
   }
 `;
