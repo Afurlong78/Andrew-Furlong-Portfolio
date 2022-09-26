@@ -631,6 +631,11 @@ export const BBContent = styled.div`
     color: white;
     border: none;
   }
+
+  @media all and (max-width: 450px) {
+    justify-content: start;
+    padding-top: 0px;
+  }
 `;
 
 export const NearFall = styled.div`
@@ -721,6 +726,11 @@ export const NFContent = styled.div`
     background-size: cover;
     color: white;
     border: none;
+  }
+
+  @media all and (max-width: 450px) {
+    justify-content: start;
+    padding-top: 0px;
   }
 `;
 
@@ -814,6 +824,11 @@ export const WWContent = styled.div`
     color: white;
     border: none;
   }
+
+  @media all and (max-width: 450px) {
+    justify-content: start;
+    padding-top: 0px;
+  }
 `;
 
 export const GUStakes = styled.div`
@@ -904,6 +919,11 @@ export const GUContent = styled.div`
     background-size: cover;
     color: white;
     border: none;
+  }
+
+  @media all and (max-width: 450px) {
+    justify-content: start;
+    padding-top: 0px;
   }
 `;
 
