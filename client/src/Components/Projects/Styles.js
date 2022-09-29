@@ -1030,6 +1030,10 @@ export const Skill = styled.div`
     height: 1.5rem;
     font-size: 0.8rem;
   }
+
+  @media all and (max-width: 450px){
+    height: 1.3rem
+  }
 `;
 
 export const IconContainer = styled.div`

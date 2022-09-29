@@ -1,7 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
 export const MainContact = styled.div`
-  height: 100%;
+  height: 500px;
+  min-height: 100%;
   width: 100%;
 
   display: flex;
@@ -12,6 +13,7 @@ export const MainContact = styled.div`
 
   @media all and (max-width: 1024px) {
     flex-direction: column;
+    height: 100%;
   }
 `;
 
@@ -56,11 +58,12 @@ export const FormContainer = styled.form`
 export const GoodbyeTextContainer = styled.div`
   width: 40%;
   height: 100%;
-  min-height: 200px;
+
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   padding: 10px;
@@ -100,6 +103,8 @@ export const GoodbyeText = styled.div`
   letter-spacing: 0.8px;
   line-height: 1.5rem;
 
+  margin-top: 20px;
+
   text-indent: 15px;
 
   transition: all 300ms ease-in-out;
@@ -111,6 +116,11 @@ export const GoodbyeText = styled.div`
       return `#292929`;
     }
   }};
+
+  @media all and (max-width: 1024px) {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 `;
 
 //---------------------------------------------------------------------------//
@@ -378,8 +388,13 @@ export const TextContainer = styled.textarea`
 `;
 
 export const IconContainer = styled.div`
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding-right: 20px;
+
   color: ${(props) => {
     if (props.status) {
       return `#292929`;
@@ -388,7 +403,7 @@ export const IconContainer = styled.div`
     }
   }};
 
-  margin-top: 15px;
+  margin-bottom: 20px;
 
   display: flex;
   justify-content: center;
