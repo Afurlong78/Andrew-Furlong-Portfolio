@@ -134,7 +134,7 @@ function Projects() {
                 <strong style={{ paddingRight: "5px" }}>Description:</strong>
                 BetterBudget is a full stack application made with MERN stack.
                 This app features user creation, user validation, login and much
-                more. Click below to check it out!
+                more. Click view to check it out!
               </CardText>
               <SkillsRow>
                 <Skill status={theme}>
@@ -228,7 +228,7 @@ function Projects() {
                   <strong>Role:</strong> Creator
                 </div>
                 <strong style={{ paddingRight: "5px" }}>Description:</strong>The
-                NearFall Fishing is my first professional free lance experience.
+                NearFall Fishing Charter is my first professional free lance experience.
                 I was brought onto this project to assist in developing the
                 theme of the site and create the front end and paypal
                 functionality.
@@ -374,7 +374,7 @@ function Projects() {
                   <strong>Role:</strong> Jr front end engineer
                 </div>
                 <strong style={{ paddingRight: "5px" }}>Description:</strong>
-                GUStakes is a fullstack MERN site based off the game Gods
+                GUStakes is a fullstack MERN application based off of the game Gods
                 Unchained. Gustakes utilizes blockchain technology, allowing
                 players to create stakes on various match types.
               </CardText>
