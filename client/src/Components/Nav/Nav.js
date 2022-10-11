@@ -36,7 +36,11 @@ function Nav() {
           <strong>A</strong>f
         </NavLogo>
         <ThemeingPill status={theme} onClick={themeHandler}>
-          {!theme ? <BsFillMoonStarsFill /> : <FaSun />}
+          {!theme ? (
+            <BsFillMoonStarsFill style={{ height: "100%", width: "100%" }} />
+          ) : (
+            <FaSun style={{ height: "100%", width: "100%" }} />
+          )}
         </ThemeingPill>
       </LogoThemeContainer>
 

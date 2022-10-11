@@ -183,7 +183,6 @@ export const ThemeingPill = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
 
   color: ${(props) => {
     if (props.status) {
@@ -200,14 +199,10 @@ export const ThemeingPill = styled.button`
   transition: all 300ms ease-in-out;
 
   background: none;
-  border: 2px solid transparent;
+  border: none;
   border-radius: 4px;
 
   &:hover {
-    border: 2px solid transparent;
-
-    font-size: 3rem;
-
     background: ${(props) => {
       if (props.status) {
         return `rgba(255, 255, 255, 0.2)`;
