@@ -206,6 +206,8 @@ export const ThemeingPill = styled.button`
   &:hover {
     border: 2px solid transparent;
 
+    font-size: 3rem;
+
     background: ${(props) => {
       if (props.status) {
         return `rgba(255, 255, 255, 0.2)`;
