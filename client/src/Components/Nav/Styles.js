@@ -183,6 +183,15 @@ export const ThemeingPill = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
+
+  color: ${(props) => {
+    if (props.status) {
+      return `white`;
+    } else {
+      return `#292929`;
+    }
+  }};
 
   margin-left: 15px;
 
@@ -196,7 +205,16 @@ export const ThemeingPill = styled.button`
 
   &:hover {
     border: 2px solid transparent;
-    background: rgba(255, 255, 255, 0.2);
+
+    background: ${(props) => {
+      if (props.status) {
+        return `rgba(255, 255, 255, 0.2)`;
+      } else {
+        return `rgba(41, 41, 41, 0.5) `;
+      }
+    }};
+
+    color: white;
   }
 `;
 
