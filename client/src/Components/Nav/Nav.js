@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { Offcanvas } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useThemeContext } from "../../Providers/ThemeProvider";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
+import { FaRegWindowClose } from "react-icons/fa";
 import {
   NavContainer,
   NavLogo,
@@ -15,6 +17,7 @@ import {
   MobileNavContainer,
   MobileNavBtn,
   ResumeDownload,
+  OffCanvasIcon,
 } from "./Styles";
 
 function Nav() {
@@ -22,42 +25,48 @@ function Nav() {
 
   const [mobile, setMobile] = useState(false);
 
-  const mobileHandler = (e) => {
-    e.preventDefault();
-
-    setMobile(!mobile);
-  };
+  function closeMobile() {
+    setMobile(false);
+  }
 
   return (
-    <NavContainer id="nav">
+    <NavContainer id="nav" status={theme}>
       <LogoThemeContainer>
-        <NavLogo href="#home">
+        <NavLogo href="#home" status={theme}>
           <strong>A</strong>f
         </NavLogo>
         <ThemeingPill status={theme} onClick={themeHandler}>
           {!theme ? (
-            <BsFillMoonStarsFill style={{ fontSize: "3rem", color: "white" }} />
+            <BsFillMoonStarsFill
+              style={{ fontSize: "3rem", color: "#292929" }}
+            />
           ) : (
             <FaSun style={{ fontSize: "3rem", color: "white" }} />
           )}
         </ThemeingPill>
       </LogoThemeContainer>
 
-      <NavLinkContainer>
-        <NavLink href="#home">Home</NavLink>
-        <NavLink href="#about">About</NavLink>
-        <NavLink href="#projects">Projects</NavLink>
-        <NavLink href="#contact">Contact</NavLink>
-        <ResumeDownload href="resume.pdf" download>
-          Download Resume
-        </ResumeDownload>
-      </NavLinkContainer>
+      {!mobile && (
+        <NavLinkContainer>
+          <NavLink href="#home" status={theme}>
+            Home
+          </NavLink>
+          <NavLink href="#about" status={theme}>
+            About
+          </NavLink>
+          <NavLink href="#projects" status={theme}>
+            Projects
+          </NavLink>
+          <NavLink href="#contact" status={theme}>
+            Contact
+          </NavLink>
+          <ResumeDownload href="resume.pdf" download status={theme}>
+            Download Resume
+          </ResumeDownload>
+        </NavLinkContainer>
+      )}
 
-      <MobileNavIcon onClick={mobileHandler}>
-        <GiHamburgerMenu />
-      </MobileNavIcon>
-
-      <MobileNav status={mobile}>
+      {/* <MobileNav status={mobile} id="mobile-nav">
         <MobileNavContainer>
           <MobileNavBtn href="#home">Home</MobileNavBtn>
           <MobileNavBtn href="#about">About</MobileNavBtn>
@@ -67,7 +76,50 @@ function Nav() {
             Resume
           </MobileNavBtn>
         </MobileNavContainer>
-      </MobileNav>
+      </MobileNav> */}
+
+      <Offcanvas
+        show={mobile}
+        onHide={closeMobile}
+        style={
+          theme
+            ? { background: "#292929", width: "50%" }
+            : { background: "rgb(249, 251, 255, 0.99)", width: "50%" }
+        }
+        placement="end"
+      >
+        <OffCanvasIcon
+          onClick={closeMobile}
+          status={theme}
+          style={{
+            marginTop: "20px",
+            marginLeft: "20px",
+          }}
+        >
+          <FaRegWindowClose />
+        </OffCanvasIcon>
+        <MobileNavContainer class="offcanvas-body">
+          <MobileNavBtn href="#home" status={theme}>
+            Home
+          </MobileNavBtn>
+          <MobileNavBtn href="#about" status={theme}>
+            About
+          </MobileNavBtn>
+          <MobileNavBtn href="#projects" status={theme}>
+            Projects
+          </MobileNavBtn>
+          <MobileNavBtn href="#contact" status={theme}>
+            Contact
+          </MobileNavBtn>
+          <MobileNavBtn href="resume.pdf" download status={theme}>
+            Resume
+          </MobileNavBtn>
+        </MobileNavContainer>
+      </Offcanvas>
+
+      <MobileNavIcon onClick={() => setMobile(!mobile)} status={theme}>
+        <GiHamburgerMenu />
+      </MobileNavIcon>
     </NavContainer>
   );
 }

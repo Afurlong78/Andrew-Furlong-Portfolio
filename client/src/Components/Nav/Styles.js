@@ -1,3 +1,4 @@
+import { BsDisplay } from "react-icons/bs";
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
@@ -6,7 +7,13 @@ export const NavContainer = styled.div`
 
   position: fixed;
 
-  background: #292929;
+  background: ${(props) => {
+    if (props.status) {
+      return `#292929`;
+    } else {
+      return `rgb(249, 251, 255, 0.99)`;
+    }
+  }};
   color: white;
 
   display: flex;
@@ -33,8 +40,20 @@ export const NavLogo = styled.a`
 
   border: none;
 
-  background: white;
-  color: #292929;
+  background: ${(props) => {
+    if (props.status) {
+      return `white`;
+    } else {
+      return `#292929`;
+    }
+  }};
+  color: ${(props) => {
+    if (props.status) {
+      return `#292929`;
+    } else {
+      return `white`;
+    }
+  }};
 
   border-radius: 30% 70% 70% 30% / 38% 30% 70% 62%;
 
@@ -48,6 +67,13 @@ export const NavLogo = styled.a`
   transition: all 100ms ease-in-out;
   &:hover {
     transform: rotate(-20deg);
+    color: ${(props) => {
+      if (props.status) {
+        return `#292929`;
+      } else {
+        return `white`;
+      }
+    }};
   }
 `;
 
@@ -81,7 +107,7 @@ export const NavLinkContainer = styled.div`
 `;
 
 export const NavLink = styled.a`
-  height: 2rem;
+  height: 3rem;
   width: auto;
 
   border-radius: 8px;
@@ -93,10 +119,16 @@ export const NavLink = styled.a`
 
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.8px;
 
-  color: white;
+  color: ${(props) => {
+    if (props.status) {
+      return `white`;
+    } else {
+      return `#292929`;
+    }
+  }};
 
   border: none;
 
@@ -111,8 +143,15 @@ export const NavLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: ${(props) => {
+      if (props.status) {
+        return `rgba(255, 255, 255, 0.2)`;
+      } else {
+        return `rgba(41, 41, 41, 0.5) `;
+      }
+    }};
     transform: scale(1.1);
+    color: white;
   }
 `;
 
@@ -169,7 +208,13 @@ export const MobileNavIcon = styled.button`
   display: none;
   border: none;
 
-  color: white;
+  color: ${(props) => {
+    if (props.status) {
+      return `white`;
+    } else {
+      return `#292929`;
+    }
+  }};
 
   height: 3rem;
   width: 3rem;
@@ -187,12 +232,42 @@ export const MobileNavIcon = styled.button`
   z-index: 100;
 
   @media all and (max-width: 950px) {
-    display: block;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
+
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+
+export const OffCanvasIcon = styled.button`
+  display: flex;
+  border: none;
+
+  color: ${(props) => {
+    if (props.status) {
+      return `white`;
+    } else {
+      return `#292929`;
+    }
+  }};
+
+  height: 3rem;
+  width: 3rem;
+
+  padding: 0px;
+
+  background: transparent;
+
+  font-size: 3rem;
+
+  cursor: pointer;
+
+  margin-right: 30px;
+
+  z-index: 100;
 
   transition: transform 0.2s ease-in-out;
 
@@ -257,7 +332,8 @@ export const MobileNavContainer = styled.div`
 
 export const MobileNavBtn = styled.a`
   height: 3rem;
-  width: 10rem;
+  max-width: 12rem;
+  width: 90%;
 
   border-radius: 8px;
   border: 2px solid transparent;
@@ -275,21 +351,46 @@ export const MobileNavBtn = styled.a`
 
   cursor: pointer;
 
-  background: white;
-  color: #292929;
+  background: ${(props) => {
+    if (props.status) {
+      return `white`;
+    } else {
+      return `#292929`;
+    }
+  }};
+
+  color: ${(props) => {
+    if (props.status) {
+      return `#292929`;
+    } else {
+      return `white`;
+    }
+  }};
 
   margin-bottom: 15px;
 
   transition: all 200ms ease-in-out;
   &:hover {
-    border: 2px solid white;
+    border: ${(props) => {
+      if (props.status) {
+        return `2px solid white`;
+      } else {
+        return `2px solid #292929`;
+      }
+    }};
     background: transparent;
-    color: white;
+    color: ${(props) => {
+      if (props.status) {
+        return `white`;
+      } else {
+        return `#292929`;
+      }
+    }};
   }
 `;
 
 export const ResumeDownload = styled.a`
-  height: 2rem;
+  height: 3rem;
   width: auto;
 
   cursor: pointer;
@@ -305,10 +406,16 @@ export const ResumeDownload = styled.a`
 
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.8px;
 
-  color: white;
+  color: ${(props) => {
+    if (props.status) {
+      return `white`;
+    } else {
+      return `#292929`;
+    }
+  }};
 
   border: none;
 
@@ -323,7 +430,18 @@ export const ResumeDownload = styled.a`
   text-decoration: none;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: ${(props) => {
+      if (props.status) {
+        return `rgba(255, 255, 255, 0.2)`;
+      } else {
+        return `rgba(41, 41, 41, 0.5) `;
+      }
+    }};
     transform: scale(1.1);
+    color: white;
   }
 `;
+
+//--------------------CANVAS WRAPPER----------------------//
+//--------------------CANVAS WRAPPER----------------------//
+//--------------------CANVAS WRAPPER----------------------//

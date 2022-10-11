@@ -35,6 +35,8 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: start;
 
+  gap: 1rem;
+
   /* @media all and (max-height: 790px) {
     margin-top: 190px;
   } */
@@ -169,11 +171,19 @@ export const BtnRow = styled.div`
   justify-content: center;
   align-items: start;
 
+  padding-left: 1px;
+
+  margin-top: -10px;
+
   transition: all 300ms;
   animation: 800ms ${smallHeroAnimation} ease-in-out;
 
   @media all and (max-width: 900px) {
     margin-left: 0px;
+  }
+
+  @media all and (max-width: 500px) {
+    padding-left: 0px;
   }
 `;
 

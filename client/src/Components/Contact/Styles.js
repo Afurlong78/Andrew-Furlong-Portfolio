@@ -291,12 +291,23 @@ export const FormBtn = styled.button`
     box-shadow: -2px 10px 10px 0px rgba(0, 0, 0, 0.2);
     background: #575656;
   }
+
+  @media all and (max-width: 500px) {
+    font-size: 0.7rem;
+    width: 9rem;
+
+    &:hover {
+      transform: scale(1);
+      background: #575656;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+  }
 `;
 
 export const Input = styled.input`
   border-radius: 6px;
   width: 75%;
-  height: 2.5rem;
+  height: 3rem;
   background: #fcfcfc;
   color: #292929;
 

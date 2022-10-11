@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "./Providers/ThemeProvider";
 import { ContactProvider } from "./Providers/ContactProvider";
 import { ProjectProvider } from "./Providers/ProjectProvider";
