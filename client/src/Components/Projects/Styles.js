@@ -634,7 +634,7 @@ export const BBContent = styled.div`
 
   @media all and (max-width: 450px) {
     justify-content: start;
-    padding-top: 0px;
+    padding-top: 20px;
   }
 `;
 
@@ -730,7 +730,7 @@ export const NFContent = styled.div`
 
   @media all and (max-width: 450px) {
     justify-content: start;
-    padding-top: 0px;
+    padding-top: 20px;
   }
 `;
 
@@ -827,7 +827,7 @@ export const WWContent = styled.div`
 
   @media all and (max-width: 450px) {
     justify-content: start;
-    padding-top: 0px;
+    padding-top: 20px;
   }
 `;
 
@@ -923,7 +923,7 @@ export const GUContent = styled.div`
 
   @media all and (max-width: 450px) {
     justify-content: start;
-    padding-top: 0px;
+    padding-top: 20px;
   }
 `;
 
@@ -1031,8 +1031,8 @@ export const Skill = styled.div`
     font-size: 0.8rem;
   }
 
-  @media all and (max-width: 450px){
-    height: 1.3rem
+  @media all and (max-width: 450px) {
+    height: 1.3rem;
   }
 `;
 
