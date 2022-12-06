@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import Styled from "../Global/Styles";
+import contact from "../../Assets/Contact.png";
 import { useInView } from "react-intersection-observer";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
@@ -97,7 +98,10 @@ function Contact() {
               feedback, comments or even potential buisness oppertunities.
             </GoodbyeText>
             <IconContainer status={theme}>
-              <SiMinutemailer style={{ height: "100%", width: "100%" }} />
+              <img
+                src={contact}
+                style={{ height: "150px", aspectRatio: "2/1" }}
+              />
             </IconContainer>
           </GoodbyeTextContainer>
 

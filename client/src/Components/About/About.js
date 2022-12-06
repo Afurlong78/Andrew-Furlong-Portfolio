@@ -28,6 +28,8 @@ import {
   SiStyledcomponents,
   SiBootstrap,
   SiFramer,
+  SiTypescript,
+  SiSass,
 } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 
@@ -122,6 +124,15 @@ function About() {
 
                 <Skill status={theme}>
                   <IconContainer status={theme}>
+                    <SiTypescript style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    Typescript
+                  </SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
                     <SiHtml5 style={{ height: "70%", width: "70%" }} />
                   </IconContainer>
                   <SkillTextContainer status={theme}>HTML</SkillTextContainer>
@@ -132,6 +143,13 @@ function About() {
                     <SiCss3 style={{ height: "70%", width: "70%" }} />
                   </IconContainer>
                   <SkillTextContainer status={theme}>CSS</SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiSass style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>SCSS</SkillTextContainer>
                 </Skill>
 
                 <Skill status={theme}>
@@ -192,6 +210,15 @@ function About() {
                   </IconContainer>
                   <SkillTextContainer status={theme}>
                     Bootstrap
+                  </SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiFramer style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    Framer Motion
                   </SkillTextContainer>
                 </Skill>
               </SkillsContainer>

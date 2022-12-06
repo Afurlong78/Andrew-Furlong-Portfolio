@@ -11,14 +11,14 @@ import {
   Project,
   BetterBudget,
   NearFall,
-  WelcomeWeather,
+  Shopping,
   GUStakes,
   BBMedia,
   BBContent,
   NFContent,
   NFMedia,
-  WWContent,
-  WWMedia,
+  ShopContent,
+  ShopMedia,
   GUContent,
   GUMedia,
   CardHeader,
@@ -35,7 +35,7 @@ import {
   DarkBBBtn,
   DarkGUBtn,
   DarkNFBtn,
-  DarkWWBtn,
+  DarkShopBtn,
 } from "./Styles";
 import {
   SiJavascript,
@@ -47,6 +47,9 @@ import {
   SiNodedotjs,
   SiStyledcomponents,
   SiBootstrap,
+  SiSass,
+  SiFramer,
+  SiTypescript,
 } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 import { ImEye } from "react-icons/im";
@@ -87,12 +90,12 @@ function Projects() {
             <DarkBBBtn onClick={() => toggleHandler(1)} status={toggle}>
               BetterBudget
             </DarkBBBtn>
-            <DarkNFBtn onClick={() => toggleHandler(2)} status={toggle}>
+            <DarkShopBtn onClick={() => toggleHandler(2)} status={toggle}>
+              Shopping
+            </DarkShopBtn>
+            <DarkNFBtn onClick={() => toggleHandler(3)} status={toggle}>
               NearFall
             </DarkNFBtn>
-            <DarkWWBtn onClick={() => toggleHandler(3)} status={toggle}>
-              WelcomeWeather
-            </DarkWWBtn>
             <DarkGUBtn onClick={() => toggleHandler(4)} status={toggle}>
               GUStakes
             </DarkGUBtn>
@@ -194,6 +197,82 @@ function Projects() {
             </BBContent>
           </BetterBudget>
 
+          <Shopping status={toggle} tabIndex="-1">
+            <ShopMedia />
+            <ShopContent status={theme}>
+              <CardHeader>
+                <strong>Shopping</strong>
+              </CardHeader>
+              <CardBtnRow>
+                <BtnWrapper status={toggle}>
+                  <CardBtnRow>
+                    <CardBtn
+                      tabIndex="-1"
+                      target="_blank"
+                      href="https://shop-lyart-five.vercel.app/"
+                    >
+                      <ImEye style={{ marginRight: "5px" }} />
+                      View
+                    </CardBtn>
+                    <CardBtn
+                      tabIndex="-1"
+                      target="_blank"
+                      href="https://github.com/Afurlong78/client"
+                    >
+                      <BiGitBranch style={{ marginRight: "5px" }} />
+                      Git
+                    </CardBtn>
+                  </CardBtnRow>
+                </BtnWrapper>
+              </CardBtnRow>
+              <CardText>
+                <div style={{ marginBottom: "5px" }}>
+                  {" "}
+                  <strong>Role:</strong> Creator
+                </div>
+                <strong style={{ paddingRight: "5px" }}>Description:</strong>
+                Shopping is an online store clone that is meant to mimic what a
+                real online store would offer to users. Users can search for
+                items and add them to their cart.
+              </CardText>
+              <SkillsRow>
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiTypescript style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    TypeScript
+                  </SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiBootstrap />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    Bootstrap
+                  </SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiSass style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>SCSS</SkillTextContainer>
+                </Skill>
+
+                <Skill status={theme}>
+                  <IconContainer status={theme}>
+                    <SiFramer style={{ height: "70%", width: "70%" }} />
+                  </IconContainer>
+                  <SkillTextContainer status={theme}>
+                    Framer Motion
+                  </SkillTextContainer>
+                </Skill>
+              </SkillsRow>
+            </ShopContent>
+          </Shopping>
+
           <NearFall status={toggle}>
             <NFMedia />
             <NFContent status={theme}>
@@ -228,10 +307,10 @@ function Projects() {
                   <strong>Role:</strong> Creator
                 </div>
                 <strong style={{ paddingRight: "5px" }}>Description:</strong>The
-                NearFall Fishing Charter is my first professional free lance experience.
-                I was brought onto this project to assist in developing the
-                theme of the site and create the front end and paypal
-                functionality.
+                NearFall Fishing Charter is my first professional free lance
+                experience. I was brought onto this project to assist in
+                developing the theme of the site and create the front end and
+                paypal functionality.
               </CardText>
               <SkillsRow>
                 <Skill status={theme}>
@@ -270,80 +349,6 @@ function Projects() {
             </NFContent>
           </NearFall>
 
-          <WelcomeWeather status={toggle} tabIndex="-1">
-            <WWMedia />
-            <WWContent status={theme}>
-              <CardHeader>
-                <strong>Welcome Weather</strong>
-              </CardHeader>
-              <CardBtnRow>
-                <BtnWrapper status={toggle}>
-                  <CardBtnRow>
-                    <CardBtn
-                      tabIndex="-1"
-                      target="_blank"
-                      href="https://welcome-weather.vercel.app/"
-                    >
-                      <ImEye style={{ marginRight: "5px" }} />
-                      View
-                    </CardBtn>
-                    <CardBtn
-                      tabIndex="-1"
-                      target="_blank"
-                      href="https://github.com/Afurlong78/welcome-weather"
-                    >
-                      <BiGitBranch style={{ marginRight: "5px" }} />
-                      Git
-                    </CardBtn>
-                  </CardBtnRow>
-                </BtnWrapper>
-              </CardBtnRow>
-              <CardText>
-                <div style={{ marginBottom: "5px" }}>
-                  {" "}
-                  <strong>Role:</strong> Creator
-                </div>
-                <strong style={{ paddingRight: "5px" }}>Description:</strong>
-                Welcome Weather is a simple weather application that features api
-                queries, local storage and a 5 day weather forecast.
-              </CardText>
-              <SkillsRow>
-                <Skill status={theme}>
-                  <IconContainer status={theme}>
-                    <SiJavascript style={{ height: "70%", width: "70%" }} />
-                  </IconContainer>
-                  <SkillTextContainer status={theme}>
-                    Javascript
-                  </SkillTextContainer>
-                </Skill>
-                <Skill status={theme}>
-                  <IconContainer status={theme}>
-                    <SiHtml5 />
-                  </IconContainer>
-                  <SkillTextContainer status={theme}>HTML</SkillTextContainer>
-                </Skill>
-
-                <Skill status={theme}>
-                  <IconContainer status={theme}>
-                    <SiCss3 style={{ height: "70%", width: "70%" }} />
-                  </IconContainer>
-                  <SkillTextContainer status={theme}>CSS</SkillTextContainer>
-                </Skill>
-
-                <Skill status={theme}>
-                  <IconContainer status={theme}>
-                    <SiStyledcomponents
-                      style={{ height: "70%", width: "70%" }}
-                    />
-                  </IconContainer>
-                  <SkillTextContainer status={theme}>
-                    Styled Components
-                  </SkillTextContainer>
-                </Skill>
-              </SkillsRow>
-            </WWContent>
-          </WelcomeWeather>
-
           <GUStakes status={toggle}>
             <GUMedia />
             <GUContent status={theme}>
@@ -374,9 +379,9 @@ function Projects() {
                   <strong>Role:</strong> Jr front end engineer
                 </div>
                 <strong style={{ paddingRight: "5px" }}>Description:</strong>
-                GUStakes is a fullstack MERN application based off of the game Gods
-                Unchained. Gustakes utilizes blockchain technology, allowing
-                players to create stakes on various match types.
+                GUStakes is a fullstack MERN application based off of the game
+                Gods Unchained. Gustakes utilizes blockchain technology,
+                allowing players to create stakes on various match types.
               </CardText>
               <SkillsRow>
                 <Skill status={theme}>

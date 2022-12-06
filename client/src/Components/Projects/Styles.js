@@ -3,6 +3,7 @@ import betterBudget from "../../Assets/BetterBudget.jpg";
 import nearFall from "../../Assets/NearFall.jpg";
 import weather from "../../Assets/weather.jpg";
 import guStakes from "../../Assets/GUStakes1.PNG";
+import shop from "../../Assets/Shop.jpg";
 
 export const VisibleWrapper = styled.div`
   height: 100%;
@@ -408,14 +409,14 @@ export const DarkNFBtn = styled.button`
   cursor: pointer;
 
   background: ${(props) => {
-    if (props.status === 2) {
+    if (props.status === 3) {
       return `#575656`;
     } else {
       return `#292929`;
     }
   }};
   color: ${(props) => {
-    if (props.status === 2) {
+    if (props.status === 3) {
       return `white`;
     } else {
       return `white`;
@@ -441,7 +442,7 @@ export const DarkNFBtn = styled.button`
   }
 `;
 
-export const DarkWWBtn = styled.button`
+export const DarkShopBtn = styled.button`
   height: 3rem;
   width: 12rem;
 
@@ -456,14 +457,14 @@ export const DarkWWBtn = styled.button`
   cursor: pointer;
 
   background: ${(props) => {
-    if (props.status === 3) {
+    if (props.status === 2) {
       return `#575656`;
     } else {
       return `#292929`;
     }
   }};
   color: ${(props) => {
-    if (props.status === 3) {
+    if (props.status === 2) {
       return `white`;
     } else {
       return `white`;
@@ -655,14 +656,14 @@ export const NearFall = styled.div`
   box-shadow: -4px 10px 10px 0px rgba(0, 0, 0, 0.2);
 
   transition: ${(props) => {
-    if (props.status === 2) {
+    if (props.status === 3) {
       return `all 800ms ease-in-out`;
     } else {
       return `all 350ms ease-in-out`;
     }
   }};
   transform: ${(props) => {
-    if (props.status === 2) {
+    if (props.status === 3) {
       return `translateX(0%)`;
     } else {
       return `translateX(101%)`;
@@ -734,7 +735,7 @@ export const NFContent = styled.div`
   }
 `;
 
-export const WelcomeWeather = styled.div`
+export const Shopping = styled.div`
   height: 100%;
   width: 100%;
 
@@ -751,14 +752,14 @@ export const WelcomeWeather = styled.div`
   box-shadow: -4px 10px 10px 0px rgba(0, 0, 0, 0.2);
 
   transition: ${(props) => {
-    if (props.status === 3) {
+    if (props.status === 2) {
       return `all 800ms ease-in-out`;
     } else {
       return `all 350ms ease-in-out`;
     }
   }};
   transform: ${(props) => {
-    if (props.status === 3) {
+    if (props.status === 2) {
       return `translateX(0%)`;
     } else {
       return `translateX(101%)`;
@@ -766,14 +767,14 @@ export const WelcomeWeather = styled.div`
   }};
 `;
 
-export const WWMedia = styled.div`
+export const ShopMedia = styled.div`
   height: 100%;
   width: 30%;
 
   border-radius: 8px 0px 0px 8px;
 
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), rgba(0, 0, 0, 0.1)),
-    url(${weather});
+    url(${shop});
   background-size: cover;
 
   @media all and (max-width: 1024px) {
@@ -781,7 +782,7 @@ export const WWMedia = styled.div`
   }
 `;
 
-export const WWContent = styled.div`
+export const ShopContent = styled.div`
   height: 100%;
   width: 70%;
 
@@ -819,7 +820,7 @@ export const WWContent = styled.div`
         hsla(0, 0%, 0%, 0.75),
         rgba(0, 0, 0, 0.75)
       ),
-      url(${weather});
+      url(${shop});
     background-size: cover;
     color: white;
     border: none;
@@ -1101,6 +1102,8 @@ export const BtnWrapper = styled.div`
       return `none`;
     }
   }};
+
+  margin-bottom:10px;
 `;
 
 export const CardBtn = styled.a`
