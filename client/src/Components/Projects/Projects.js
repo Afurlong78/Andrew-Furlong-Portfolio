@@ -114,7 +114,7 @@ function Projects() {
                   <CardBtn
                     tabIndex="-1"
                     target="_blank"
-                    href="https://betterbudget-1-0.vercel.app/"
+                    href="https://bb-ts.vercel.app/"
                   >
                     <ImEye style={{ marginRight: "5px" }} />
                     View
