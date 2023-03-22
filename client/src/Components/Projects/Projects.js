@@ -122,7 +122,7 @@ function Projects() {
                   <CardBtn
                     tabIndex="-1"
                     target="_blank"
-                    href="https://github.com/Afurlong78/BetterBudget"
+                    href="https://github.com/Afurlong78/bbTS"
                   >
                     <BiGitBranch style={{ marginRight: "5px" }} />
                     Git
