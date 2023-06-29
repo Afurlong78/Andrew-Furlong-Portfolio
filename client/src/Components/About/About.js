@@ -86,10 +86,7 @@ function About() {
 
             <Styled.VisibleWrapper ref={textRef1} visible={textVisible1}>
               <Styled.Text status={theme}>
-                Following graduation from Ithaca College I initially began work
-                in the field of finance. While that experience gave me useful
-                insight into the business world, I found the work I was doing
-                was not a good match with my creative interests. Web development
+                Web development
                 draws on a different set of skills, with problem solving,
                 creativity and imagination as the key. This pairs well with the
                 strong work ethic and a vast network of resources that I have
